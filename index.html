@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Алиса ✨ С Днём Рождения!</title>
+  <title>Алиса ✨ С Днём Рождения! | Звёздное дитя</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
   <style>
     * {
@@ -14,7 +14,8 @@
 
     body {
       min-height: 100vh;
-      background: linear-gradient(125deg, #FFF9CF 0%, #D9F0A3 35%, #C8B5FF 70%, #E3B3FF 100%);
+      /* фоновые цвета: жёлтый, зелёный, фиолетовый — согласно просьбе */
+      background: linear-gradient(135deg, #FFE484 0%, #C8E6A0 30%, #D9B8FF 70%, #BF8AFF 100%);
       background-attachment: fixed;
       font-family: 'Quicksand', sans-serif;
       padding: 2rem 1.5rem;
@@ -22,7 +23,7 @@
       overflow-x: hidden;
     }
 
-    /* звездное небо — Звёздное дитя */
+    /* декоративное звездное поле (нейтральное, без магии) */
     .star-sky {
       position: fixed;
       top: 0;
@@ -36,197 +37,204 @@
       position: absolute;
       background: radial-gradient(circle, #FFF9C4, #FFEC80);
       border-radius: 50%;
-      box-shadow: 0 0 8px #FFD966;
+      box-shadow: 0 0 6px #FFD966;
       animation: starGlow 2s infinite alternate;
     }
     @keyframes starGlow {
-      0% { opacity: 0.3; transform: scale(0.8);}
-      100% { opacity: 1; transform: scale(1.3);}
+      0% { opacity: 0.25; transform: scale(0.8);}
+      100% { opacity: 0.9; transform: scale(1.2);}
     }
     .big-star {
       position: absolute;
-      font-size: 3rem;
+      font-size: 2.5rem;
       opacity: 0.2;
-      animation: slowSpin 18s linear infinite;
+      animation: slowSpin 22s linear infinite;
     }
     @keyframes slowSpin {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
 
-    /* главная карточка */
+    /* главная карточка — светлая, но читаемая */
     .card {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
-      background: rgba(255, 252, 235, 0.96);
-      backdrop-filter: blur(3px);
-      border-radius: 70px 50px 90px 60px;
-      box-shadow: 0 35px 55px rgba(95, 55, 120, 0.3), 0 10px 20px rgba(0,0,0,0.1);
-      padding: 2rem 2rem 2.8rem;
+      background: rgba(255, 253, 245, 0.96);
+      backdrop-filter: blur(2px);
+      border-radius: 64px 48px 80px 56px;
+      box-shadow: 0 35px 55px rgba(85, 45, 120, 0.35), 0 8px 20px rgba(0,0,0,0.08);
+      padding: 2.2rem 2.5rem 3rem;
       position: relative;
       z-index: 15;
-      border: 3px solid #F9DC6F;
+      border: 3px solid #F6DC7B;
     }
 
-    /* декоративные элементы - звёздная тема */
+    /* декоративные элементы — нейтральные значки без магических формулировок */
     .star-badge {
       display: flex;
       justify-content: center;
       gap: 18px;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
       flex-wrap: wrap;
     }
     .badge {
-      background: #F8EFB0;
+      background: #FDF3CD;
       border-radius: 100px;
-      padding: 6px 20px;
+      padding: 6px 24px;
       font-weight: 700;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       color: #5D3A7A;
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      box-shadow: 0 3px 6px #cdb5e6;
+      box-shadow: 0 2px 8px #d7bde6;
     }
 
     h1 {
-      font-size: 3.3rem;
+      font-size: 3.5rem;
       text-align: center;
-      background: linear-gradient(135deg, #AE7CFF, #F9D56E, #9BCB65);
+      background: linear-gradient(135deg, #9F5EFF, #FAD05C, #8FC75E);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
-      margin: 0.5rem 0;
-      letter-spacing: -0.5px;
+      margin: 0.3rem 0 0.2rem;
+      letter-spacing: -0.3px;
     }
 
     .greeting {
       text-align: center;
       font-size: 2rem;
       font-weight: 800;
-      background: #FFFAE0;
+      background: #FFF6DE;
       display: inline-block;
       width: auto;
-      margin: 0 auto 1rem;
-      padding: 0.3rem 1.8rem;
+      margin: 0 auto 0.8rem;
+      padding: 0.2rem 2rem;
       border-radius: 60px;
-      color: #543881;
-      box-shadow: inset 0 -2px 0 #E5C86B, 0 8px 14px rgba(152, 109, 181, 0.2);
+      color: #4C2C6E;
+      box-shadow: inset 0 -2px 0 #E7CE72, 0 8px 12px rgba(128, 85, 160, 0.15);
     }
 
     .alisa-name {
-      font-size: 4rem;
+      font-size: 4.3rem;
       font-weight: 900;
       text-align: center;
-      color: #B44CE0;
-      text-shadow: 5px 5px 0 #FFE083, 2px 2px 12px #b983ff;
-      margin: 0.2rem 0 0.8rem;
+      color: #BA66FF;
+      text-shadow: 5px 5px 0 #FFE394, 2px 2px 12px #d5aaff;
+      margin: 0.1rem 0 1rem;
       letter-spacing: 1px;
+      line-height: 1.2;
     }
 
-    /* Звездное дитя центральный блок */
+    /* Блок «Звёздное дитя» — любимое аниме */
     .star-child-section {
-      background: linear-gradient(145deg, #FFFAE5, #F5EFC0);
+      background: linear-gradient(145deg, #FFF9E8, #FDF2D2);
       border-radius: 56px;
       padding: 1.8rem;
       margin: 2rem 0;
-      border: 2px dashed #C99AF5;
+      border: 2px solid #CB9EFF;
       text-align: center;
     }
 
     .star-child-icon {
-      font-size: 4.2rem;
-      filter: drop-shadow(2px 4px 12px gold);
+      font-size: 4rem;
+      filter: drop-shadow(2px 4px 8px rgba(180, 130, 220, 0.4));
     }
 
     .anime-title-main {
-      font-size: 2.4rem;
+      font-size: 2.5rem;
       font-weight: 800;
-      background: linear-gradient(135deg, #A56DE2, #F4C542);
+      background: linear-gradient(135deg, #A155E0, #EBBF4A);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
-      margin: 0.4rem 0;
+      margin: 0.3rem 0;
     }
 
     .quote-space {
       font-size: 1.2rem;
-      background: #FFEFBF;
-      border-radius: 40px;
-      padding: 1rem;
-      max-width: 85%;
+      background: #FFF2D7;
+      border-radius: 48px;
+      padding: 1rem 1.5rem;
+      max-width: 90%;
       margin: 1rem auto;
-      font-style: italic;
-      color: #3f2960;
+      font-style: normal;
+      color: #2d1c46;
       font-weight: 600;
-      border-left: 8px solid #9DDA6B;
+      border-left: 8px solid #AADB6F;
+      border-right: 3px solid #F7E09E;
     }
 
-    /* пожелания */
+    /* поздравление — очень полное и тёплое */
     .wish-block {
-      background: #EFE0FF;
+      background: #F6EDFF;
       border-radius: 55px;
-      padding: 1.8rem;
+      padding: 2rem 2rem;
       margin: 1.8rem 0;
-      border-right: 12px solid #F9D966;
-      border-left: 12px solid #ADE67C;
+      border-right: 12px solid #FFE083;
+      border-left: 12px solid #B7E67C;
     }
     .wish-text {
       font-size: 1.35rem;
-      line-height: 1.45;
+      line-height: 1.55;
       font-weight: 600;
-      color: #2F1E46;
-      text-align: center;
+      color: #2E1A46;
+      text-align: left;
+    }
+    .wish-text p {
+      margin-bottom: 1rem;
     }
     .highlight {
-      background: #FFF3B7;
-      border-radius: 30px;
+      background: #FFF1B5;
+      border-radius: 40px;
       padding: 0.1rem 0.6rem;
       font-weight: 800;
-      color: #AF46E1;
+      color: #AC3EEB;
       display: inline-block;
     }
 
-    /* красивая цитата */
+    /* второе пожелание, более личное */
     .star-bless {
-      background: #FFFDCF;
-      padding: 1rem 1.8rem;
+      background: #FFFADB;
+      padding: 1.2rem 2rem;
       border-radius: 90px;
       text-align: center;
-      font-weight: bold;
+      font-weight: 700;
       font-size: 1.2rem;
-      color: #6E4196;
+      color: #5D398B;
       margin: 1.5rem 0;
+      border: 1px solid #E1C484;
     }
 
+    /* кнопки — без магических слов, просто интерактив */
     .button-group {
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
+      gap: 1.8rem;
       flex-wrap: wrap;
-      margin: 30px 0 1rem;
+      margin: 30px 0 1.2rem;
     }
     .btn {
-      background: #C09AF0;
+      background: #CFADF2;
       border: none;
-      padding: 12px 32px;
-      border-radius: 50px;
+      padding: 12px 34px;
+      border-radius: 60px;
       font-weight: 800;
       font-size: 1rem;
       font-family: 'Quicksand', sans-serif;
-      color: #2E173F;
+      color: #2A143B;
       cursor: pointer;
       transition: 0.2s;
       box-shadow: 0 5px 0 #7B4C9E;
     }
     .btn-green {
-      background: #B2DF82;
-      box-shadow: 0 5px 0 #759A44;
+      background: #BCE589;
+      box-shadow: 0 5px 0 #7AA348;
       color: #2A4319;
     }
     .btn-yellow {
-      background: #FFD966;
-      box-shadow: 0 5px 0 #CCA53A;
+      background: #FFDE7A;
+      box-shadow: 0 5px 0 #DBAF34;
     }
     .btn:hover {
       transform: translateY(-3px);
@@ -239,19 +247,20 @@
 
     footer {
       text-align: center;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       color: #553b71;
       margin-top: 2rem;
       font-weight: 600;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 750px) {
       body { padding: 1rem; }
       h1 { font-size: 2.2rem; }
-      .alisa-name { font-size: 2.8rem; }
-      .greeting { font-size: 1.5rem; }
-      .anime-title-main { font-size: 1.8rem; }
-      .wish-text { font-size: 1.1rem; }
+      .alisa-name { font-size: 2.6rem; }
+      .greeting { font-size: 1.4rem; }
+      .anime-title-main { font-size: 1.7rem; }
+      .wish-text { font-size: 1.05rem; }
+      .card { padding: 1.5rem; }
     }
   </style>
 </head>
@@ -259,68 +268,66 @@
 
 <div class="star-sky" id="starfieldContainer"></div>
 
-<!-- дополнительные звездные символы -->
-<div class="big-star" style="top: 12%; left: 5%;">🌟</div>
-<div class="big-star" style="bottom: 8%; right: 3%;">⭐</div>
-<div class="big-star" style="top: 30%; right: 12%; animation-duration: 25s;">✨</div>
+<!-- фоновые звёздные фигуры, без текстового вмешательства -->
+<div class="big-star" style="top: 10%; left: 3%;">🌟</div>
+<div class="big-star" style="bottom: 12%; right: 4%;">⭐</div>
+<div class="big-star" style="top: 25%; right: 8%; animation-duration: 26s;">✨</div>
+<div class="big-star" style="bottom: 30%; left: 7%;">🌠</div>
 
 <div class="card">
   <div class="star-badge">
-    <div class="badge">⭐ Звёздное сияние ⭐</div>
-    <div class="badge">💜 Фиолетовая магия 💚</div>
-    <div class="badge">🌻 Жёлтое счастье 🌻</div>
+    <div class="badge">⭐ Звёздный свет ⭐</div>
+    <div class="badge">💜 Вдохновение 💚</div>
+    <div class="badge">🌻 Тепло души 🌻</div>
   </div>
 
-  <h1>🎉 С Днём Рождения! 🎉</h1>
+  <h1>🎂 С Днём Рождения! 🎂</h1>
   <div style="text-align: center;">
-    <div class="greeting">Для самой невероятной</div>
+    <div class="greeting">Самой прекрасной и удивительной</div>
   </div>
   <div class="alisa-name">Алиса ✨</div>
 
-  <!-- ЛЮБИМОЕ АНИМЕ: ЗВЕЗДНОЕ ДИТЯ -->
+  <!-- ЛЮБИМОЕ АНИМЕ: ЗВЁЗДНОЕ ДИТЯ (упоминается только аниме) -->
   <div class="star-child-section">
-    <div class="star-child-icon">⭐🌠🌟🌙⭐</div>
+    <div class="star-child-icon">⭐🌠🌟✨⭐</div>
     <div class="anime-title-main">「 Звёздное дитя 」</div>
     <div class="quote-space">
-      ✨ «Ты — свет, который рождается среди звёзд, несущий тепло и надежду.» ✨<br>
-       Пусть каждый твой день будет наполнен космическим волшебством!
+      «Твой путь освещают самые яркие созвездия. Пусть каждый новый день будет похож на страницу из любимой истории — с нежностью, светлыми открытиями и искренними чувствами.»
     </div>
-    <div style="margin-top: 10px; font-weight: 700; color: #BE7CFF;">✨ Алиса — настоящая звезда среди всех ✨</div>
+    <div style="margin-top: 12px; font-weight: 700; color: #9B5DE0;">✨ Алиса — ты настоящее сияние ✨</div>
   </div>
 
-  <!-- поздравительный блок -->
+  <!-- развёрнутое поздравление + душевные слова, без упоминания цветов и без магии -->
   <div class="wish-block">
     <div class="wish-text">
-      🌟 Дорогая <span class="highlight">Алиса</span>! 🌟<br><br>
-      Поздравляю тебя с Днём Рождения! Желаю, чтобы твоя жизнь сияла так же ярко, как <span class="highlight">звёздное небо</span> .<br>
-      Пусть каждый день приносит вдохновение, магию и свет. Оставайся такой же удивительной, искренней и лёгкой, как фея.<br><br>
-      Сбудется всё, что загадаешь под сиянием звёзд! С днём рождения, наша <span class="highlight">Звезда Алиса</span>! 💜💛💚
+      <p>💛 Дорогая <span class="highlight">Алиса</span>! 💜</p>
+      <p>Сегодня твой особенный день, и я от всей души хочу пожелать тебе самой искренней радости, которую только можно представить. Пусть в твоей жизни будет столько же света, сколько звёзд на ночном небе, — и каждый лучик дарит тебе улыбку.</p>
+      <p>Ты — человек с огромным сердцем, невероятной фантазией и чуткостью. Именно такие люди, как ты, делают этот мир добрее и интереснее. Помни, что любые мечты становятся ближе, когда в них веришь по-настоящему, а ты умеешь верить и вдохновлять окружающих.</p>
+      <p>Желаю тебе вдохновения для новых свершений, тёплых встреч, ярких событий и настоящей, искренней поддержки от близких. Пусть каждый твой день будет наполнен гармонией, уютом и приятными сюрпризами. И, конечно, пусть рядом всегда будут те, кто ценит тебя такой, какая ты есть — удивительной, светлой и неповторимой.</p>
+      <p>С днём рождения, Алиса! Ты — наша гордость и счастье. Пусть этот год станет для тебя временем самых смелых побед и самых тёплых воспоминаний. Обнимаю! 💫</p>
+      <p style="margin-top: 0.8rem; text-align: center;">✨ <span class="highlight">Алиса</span>, сияй ярко и будь счастлива каждый день! ✨</p>
     </div>
   </div>
 
-  <!-- отдельное поздравление фан-сообщение -->
-  <div class="star-bless">
-    Желаю тебе, Алиса, найти свою путеводную звезду и никогда не терять веру в мечты. Ты — настоящее созвездие таланта и красоты!
-  </div>
-
+  <!-- дополнительная часть: пожелания о любимом аниме "Звёздное дитя" без магии -->
   <div class="button-group">
     <button class="btn btn-yellow" id="starWishBtn">💫 Звёздное пожелание 💫</button>
-    <button class="btn btn-green" id="sparkleBtn">✨ Зажечь звёзды ✨</button>
+    <button class="btn btn-green" id="sparkleBtn">✨ Согревающий свет ✨</button>
   </div>
 
   <footer>
-    С любовью и звёздной магией 🤍<br>
-    Алиса, сияй всегда! 🌟
+    С самыми добрыми мыслями о тебе 💛💚💜<br>
+    Алиса, пусть этот день запомнится навсегда!
   </footer>
 </div>
 
 <script>
-  // функция для создания мерцающих звёзд
+  // функция создания звёздного фона (нейтральный)
   function createStars() {
     const container = document.getElementById('starfieldContainer');
     if(!container) return;
     container.innerHTML = '';
-    const starCount = 210;
+    const starCount = 240;
     for(let i=0; i<starCount; i++) {
       const star = document.createElement('div');
       star.classList.add('star');
@@ -329,99 +336,99 @@
       star.style.height = size + 'px';
       star.style.left = Math.random() * 100 + '%';
       star.style.top = Math.random() * 100 + '%';
-      const duration = Math.random() * 2 + 1.2;
+      const duration = Math.random() * 2.5 + 1.2;
       star.style.animationDuration = duration + 's';
-      star.style.animationDelay = Math.random() * 3 + 's';
-      star.style.background = `radial-gradient(circle, #FFF9B0, #FFD966)`;
+      star.style.animationDelay = Math.random() * 4 + 's';
+      star.style.background = `radial-gradient(circle, #FFF9C4, #FFEC80)`;
       container.appendChild(star);
     }
-    // добавить несколько крупных декоративных звёзд
-    for(let i=0; i<25; i++) {
+    // несколько декоративных крупных звёзд
+    for(let i=0; i<30; i++) {
       const big = document.createElement('div');
-      big.innerHTML = ['⭐','🌟','✨','💫'][Math.floor(Math.random()*4)];
+      big.innerHTML = ['⭐','🌟','✨','💫','🌠'][Math.floor(Math.random()*5)];
       big.style.position = 'absolute';
-      big.style.fontSize = (Math.random() * 24 + 16) + 'px';
+      big.style.fontSize = (Math.random() * 22 + 14) + 'px';
       big.style.left = Math.random() * 100 + '%';
       big.style.top = Math.random() * 100 + '%';
       big.style.opacity = Math.random() * 0.3 + 0.1;
-      big.style.animation = 'slowSpin ' + (Math.random() * 20 + 15) + 's linear infinite';
+      big.style.animation = 'slowSpin ' + (Math.random() * 25 + 18) + 's linear infinite';
       big.style.pointerEvents = 'none';
       container.appendChild(big);
     }
   }
 
-  // Создаём звёздное поле при загрузке
   window.addEventListener('load', () => {
     createStars();
   });
 
-  // Кнопка "звёздное пожелание"
+  // Кнопка "Звёздное пожелание" — тёплые слова, без магии, без упоминания цветов и фразы "зажглись в честь Алисы"
   const starBtn = document.getElementById('starWishBtn');
   if(starBtn) {
     starBtn.addEventListener('click', () => {
-      const messages = [
-        "💫 Алиса, пусть созвездия улыбнутся тебе! Желаю незабываемых приключений и космической удачи! 💫",
-        "⭐ Твоё сердце — как яркая звезда. Пусть исполнятся все твои мечты! С днем рождения! ⭐",
-        "✨ Сияй ярко, как Ай!✨",
-        "🌠 Алиса, с днём рождения! Ты — настоящая звезда, несущее свет этому миру! 🌠"
+      const warmMessages = [
+        "✨ Алиса, от всей души желаю тебе ощущения полёта, счастья без границ и новых интересных историй в твоей жизни! ✨",
+        "💫 Пусть твой внутренний свет озаряет путь к самым заветным мечтам. С днём рождения, чудесный человек! 💫",
+        "⭐ Ты умеешь делать мир вокруг ярче. Желаю тебе вдохновляющих рассветов и спокойных, радостных вечеров. ⭐",
+        "🌙 Алиса, ты — особенная. Пусть все твои идеи воплощаются в жизнь легко и красиво. С днём рождения! 🌙",
+        "💛 Счастья, крепкого здоровья, верных друзей и огромной любви к жизни. Ты невероятная, Алиса! 💜"
       ];
-      const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+      const randomMsg = warmMessages[Math.floor(Math.random() * warmMessages.length)];
       alert(randomMsg);
     });
   }
 
-  // Кнопка "зажечь звёзды" — временный эффект мерцания и confetti-подобное сообщение
+  // Кнопка "Согревающий свет" – без фразы "зажглись в честь Алисы", просто тихое поздравление
   const sparkBtn = document.getElementById('sparkleBtn');
   if(sparkBtn) {
     sparkBtn.addEventListener('click', () => {
-      // Динамический эффект: Добавим временное свечение звездам
+      // легкий эффект подсветки звезд (не связан с текстом о зажжении)
       const starsAll = document.querySelectorAll('.star');
       starsAll.forEach(star => {
         star.style.animation = 'none';
         star.style.opacity = '1';
-        star.style.transform = 'scale(1.4)';
+        star.style.transform = 'scale(1.3)';
         setTimeout(() => {
           star.style.animation = '';
           star.style.opacity = '';
           star.style.transform = '';
-        }, 400);
+        }, 450);
       });
-      // Создаём всплывающее сообщение
-      const toast = document.createElement('div');
-      toast.innerText = '🌟🌟🌟 ЗВЁЗДЫ ЗАЖГЛИСЬ В ЧЕСТЬ АЛИСЫ! 🌟🌟🌟';
-      toast.style.position = 'fixed';
-      toast.style.bottom = '20%';
-      toast.style.left = '50%';
-      toast.style.transform = 'translateX(-50%)';
-      toast.style.backgroundColor = '#F7E05E';
-      toast.style.color = '#612E8E';
-      toast.style.fontWeight = 'bold';
-      toast.style.padding = '14px 28px';
-      toast.style.borderRadius = '60px';
-      toast.style.fontSize = '1.2rem';
-      toast.style.fontFamily = "'Quicksand', sans-serif";
-      toast.style.boxShadow = '0 8px 20px rgba(0,0,0,0.2)';
-      toast.style.zIndex = '1000';
-      toast.style.border = '2px solid #B873F5';
-      toast.style.backdropFilter = 'blur(4px)';
-      document.body.appendChild(toast);
+      // всплывающее сообщение без упоминания "звезды зажглись в честь Алисы", просто добрые слова
+      const gentleToast = document.createElement('div');
+      gentleToast.innerText = '✨ Алиса, пусть этот день подарит тебе только светлые минуты и тёплые улыбки! ✨';
+      gentleToast.style.position = 'fixed';
+      gentleToast.style.bottom = '20%';
+      gentleToast.style.left = '50%';
+      gentleToast.style.transform = 'translateX(-50%)';
+      gentleToast.style.backgroundColor = '#FFF2B5';
+      gentleToast.style.color = '#562F8A';
+      gentleToast.style.fontWeight = 'bold';
+      gentleToast.style.padding = '14px 28px';
+      gentleToast.style.borderRadius = '60px';
+      gentleToast.style.fontSize = '1.1rem';
+      gentleToast.style.fontFamily = "'Quicksand', sans-serif";
+      gentleToast.style.boxShadow = '0 8px 20px rgba(0,0,0,0.2)';
+      gentleToast.style.zIndex = '1000';
+      gentleToast.style.border = '2px solid #CDA9FF';
+      gentleToast.style.backdropFilter = 'blur(5px)';
+      gentleToast.style.textAlign = 'center';
+      document.body.appendChild(gentleToast);
       setTimeout(() => {
-        toast.style.opacity = '0';
-        setTimeout(() => toast.remove(), 800);
-      }, 2000);
+        gentleToast.style.opacity = '0';
+        setTimeout(() => gentleToast.remove(), 700);
+      }, 2200);
     });
   }
 
-  // добавить эффект пузырьков при наведении на карточку (просто для радости)
+  // лёгкий эффект при наведении на карточку
   const mainCard = document.querySelector('.card');
   if(mainCard) {
     mainCard.addEventListener('mouseenter', () => {
-      // легкое мерцание границы, без вмешательства в структуру
-      mainCard.style.transition = '0.2s';
-      mainCard.style.borderColor = '#FCE68A';
+      mainCard.style.transition = '0.25s';
+      mainCard.style.borderColor = '#FFE39A';
     });
     mainCard.addEventListener('mouseleave', () => {
-      mainCard.style.borderColor = '#F9DC6F';
+      mainCard.style.borderColor = '#F6DC7B';
     });
   }
 </script>
